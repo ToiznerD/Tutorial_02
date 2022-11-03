@@ -28,7 +28,7 @@ public class ThreadCheckArray implements Runnable
 		}	
 		if (n == 1)
 		{
-			if(b == 0 || b == array[n-1])
+			if(b == 0 || b == array.get(n-1))
 			{
 				flag = true;
 				synchronized (sd) 
@@ -55,7 +55,7 @@ public class ThreadCheckArray implements Runnable
 	public void run() {
 		if (array.size() != 1)
 			if (Thread.currentThread().getName().equals("thread1"))
-				rec(array.size()-1, b - array.get()array.size() - 1));
+				rec(array.size()-1, b - array.get(array.size() - 1));
 			else 
 				rec(array.size()-1, b);
 		if (array.size() == 1)
