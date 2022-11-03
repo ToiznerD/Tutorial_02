@@ -3,7 +3,7 @@ public class SharedData
 	private int [] array;
 	private boolean [] winArray;
 	private boolean flag;
-	private final int b;//fgfgfdsfsadfdfgdf
+	private final int b;//fgfgfdsfsadfdfgdffsdfsd
 	
 	public SharedData(int[] array, int b) {
 		
